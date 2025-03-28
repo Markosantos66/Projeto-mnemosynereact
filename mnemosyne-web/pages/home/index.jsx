@@ -32,6 +32,8 @@ const Home = () => {
         <h1>Meus momentos</h1>
         <div className="cards-container">
             {memorias.map((memoria) => (
+                <Link to={`/detalhes/${memoria.id}`} key={memoria.id} className="card-link" >
+
                 <div className="card">
                     <div className="imagem"
                         style={{
@@ -41,6 +43,7 @@ const Home = () => {
                     <h2>{memoria.titulo}</h2>
                     <p>{memoria.decricao}</p>
                 </div>
+                </Link>
 
             ))}
             <a href="#" className="card-link">

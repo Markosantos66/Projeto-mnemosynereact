@@ -14,8 +14,9 @@ function App() {
       <Routes>
         <Route path="/criar" element={<CriarMemoria />} />
         <Route path="/detalhes" element={<Detalhes />} />
+        <Route path= "/detalhes/:id" element= {<Detalhes />} />
         <Route path="/" element={<Home /> } />
-        <Route path="../home" element={<Home />} />
+        <Route path="/home" element={<Home />} />
       </Routes>
     </BrowserRouter>
     
